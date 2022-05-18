@@ -1,4 +1,4 @@
-# Jupyter Notebook Scientific Python Stack for JDCat Analysis Tool
+# Data Science Notebook for JDCat Analysis Tool
 
 Dockerfile for GakuNin RDM based on [datascience-notebook](https://hub.docker.com/r/jupyter/datascience-notebook).
 
