@@ -1,5 +1,7 @@
 FROM jupyter/datascience-notebook:lab-3.4.0
 
+COPY --chown=$NB_UID:$NB_GID ./python/Rprofile $HOME/.Rprofile
+
 # Installing CS-jupyterlab-grdm https://github.com/RCOSDP/CS-jupyterlab-grdm/
 ENV grdm_jlab_release_tag=0.1.0 \
     grdm_jlab_release_url=https://github.com/RCOSDP/CS-jupyterlab-grdm/releases/download/0.1.0
