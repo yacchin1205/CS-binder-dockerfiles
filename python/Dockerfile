@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:lab-3.3.0
+FROM jupyter/datascience-notebook:lab-3.4.0
 
 # Installing CS-jupyterlab-grdm https://github.com/RCOSDP/CS-jupyterlab-grdm/
 ENV grdm_jlab_release_tag=0.1.0 \
