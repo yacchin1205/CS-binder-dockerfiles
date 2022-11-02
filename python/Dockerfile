@@ -3,7 +3,8 @@ FROM jupyter/scipy-notebook:lab-3.3.0
 # Installing CS-jupyterlab-grdm https://github.com/RCOSDP/CS-jupyterlab-grdm/
 ENV grdm_jlab_release_tag=0.1.1 \
     grdm_jlab_release_url=https://github.com/RCOSDP/CS-jupyterlab-grdm/releases/download/0.1.1
-RUN pip3 install ${grdm_jlab_release_url}/rdm_binderhub_jlabextension-refs.tags.${grdm_jlab_release_tag}.tar.gz \
+RUN pip3 install jupyterlab-language-pack-ja-JP \
+    && pip3 install ${grdm_jlab_release_url}/rdm_binderhub_jlabextension-refs.tags.${grdm_jlab_release_tag}.tar.gz \
     && jupyter labextension install ${grdm_jlab_release_url}/rdm-binderhub-jlabextension-refs.tags.${grdm_jlab_release_tag}.tgz \
     && jupyter labextension enable rdm-binderhub-jlabextension \
     && jupyter server extension enable rdm_binderhub_jlabextension \
