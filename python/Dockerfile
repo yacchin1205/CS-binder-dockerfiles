@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook:lab-3.5.0
+FROM jupyter/datascience-notebook:lab-3.6.1
 
 COPY --chown=$NB_UID:$NB_GID ./python/Rprofile $HOME/.Rprofile
 
