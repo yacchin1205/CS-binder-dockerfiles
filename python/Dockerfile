@@ -4,8 +4,8 @@ COPY --chown=$NB_UID:$NB_GID ./python/Rprofile $HOME/.Rprofile
 
 # Installing CS-jupyterlab-grdm https://github.com/RCOSDP/CS-jupyterlab-grdm/
 
-ENV grdm_jlab_release_tag=0.3.0.beta20231009 \
-    grdm_jlab_release_url=https://github.com/yacchin1205/CS-jupyterlab-grdm/releases/download/0.3.0.beta20231009
+ENV grdm_jlab_release_tag=0.3.0.beta20231010b \
+    grdm_jlab_release_url=https://github.com/yacchin1205/CS-jupyterlab-grdm/releases/download/0.3.0.beta20231010b
 ENV jupyter_resource_usage_branch=main \
     jupyter_resource_usage_url=https://github.com/RCOSDP/CS-jupyter-resource-usage
 RUN pip3 install jupyterlab-language-pack-ja-JP \
