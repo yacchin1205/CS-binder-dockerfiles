@@ -1,6 +1,6 @@
 FROM yacchin1205/matlab-integration-for-jupyter:matlab-latest
 
-COPY --chown=$NB_UID:$NB_GID ./python/Rprofile $HOME/.Rprofile
+COPY --chown=$NB_UID:$NB_GID ./matlab/Rprofile $HOME/.Rprofile
 
 # Installing CS-jupyterlab-grdm https://github.com/RCOSDP/CS-jupyterlab-grdm/
 ENV grdm_jlab_release_tag=0.3.0 \
