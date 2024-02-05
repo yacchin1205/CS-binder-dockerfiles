@@ -36,7 +36,7 @@ jobs:
           registry: gcr.io
           project_id: ${{ secrets.GCLOUD_PROJECT_ID }}
           image_name: ${{ secrets.IMAGE_PREFIX }}datascience-notebook
-          image_tag: ${{ env.IMAGE_TAG }}
+          image_tag: ${{ env.IMAGE_TAG }}-lab4.x
           dockerfile: ./python/Dockerfile
       -
         name: Build and push - r-notebook
