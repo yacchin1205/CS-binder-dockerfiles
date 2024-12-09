@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/scipy-notebook:lab-4.2.6
+FROM quay.io/jupyter/datascience-notebook:lab-4.2.6
 
 COPY --chown=$NB_UID:$NB_GID ./python/Rprofile $HOME/.Rprofile
 
