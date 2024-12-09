@@ -1,1 +1,1 @@
-options(repos=structure(c(CRAN="https://cran.ism.ac.jp/")))
+options(repos=structure(c(CRAN="https://cloud.r-project.org/")))
